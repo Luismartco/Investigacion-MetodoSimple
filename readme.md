@@ -1,6 +1,6 @@
 # Proyecto Investigacion de operaciones 2025
 
-El siguiente proyecto es el entregable del referente practivo del curso de Investigacion de Operaciones dictado por el ingeniero Pablo Perez en el marco de dicha asignatura.
+El siguiente proyecto es el entregable del referente practivo del curso de Investigacion de Operaciones dictado por el Ingeniero Pablo Perez en el marco de dicha asignatura, fue desarollado en [Flask](https://flask.palletsprojects.com/en/stable/) como alternativa escalable y sencilla para este proyecto.
 
 Integrantes:
 - Luis Martinez
@@ -8,9 +8,9 @@ Integrantes:
 
 ## Estructura
 
-Modular: Separación de responsabilidades
-Escalable: Fácil de extender y mantener
-Siguiendo mejores prácticas de Flask
+- **Modular:** Separación de responsabilidades
+- **Escalable:** Fácil de extender y mantener
+- Siguiendo mejores prácticas de Flask
 
 ## Componentes Principales
 
