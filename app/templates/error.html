@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="error-container">
+    <h2>Error en la Resolución del Problema</h2>
+    
+    <div class="error-details">
+        <h3>Mensaje de Error:</h3>
+        <p>{{ error_message }}</p>
+        
+        <h3>Detalles Técnicos:</h3>
+        <pre>{{ error_details }}</pre>
+    </div>
+    
+    <div class="error-suggestions">
+        <h3>Posibles Causas:</h3>
+        <ul>
+            <li>Formato de entrada incorrecto</li>
+            <li>Dimensiones incompatibles de matrices</li>
+            <li>Valores numéricos inválidos</li>
+            <li>Problema de programación lineal no factible</li>
+        </ul>
+        
+        <a href="{{ url_for('main.input_problem') }}" class="btn-retry">Intentar de Nuevo</a>
+    </div>
+</div>
+{% endblock %}

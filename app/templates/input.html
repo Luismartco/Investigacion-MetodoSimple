@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="input-form">
+    <h2>Ingrese los Datos del Problema de Programación Lineal</h2>
+    
+    <form action="{{ url_for('main.solve_problem') }}" method="POST">
+        <div class="form-group">
+            <label for="objective_coefficients">Coeficientes de la Función Objetivo (separados por comas):</label>
+            <input type="text" id="objective_coefficients" name="objective_coefficients" required 
+                   placeholder="Ej: 3, 5">
+        </div>
+        
+        <div class="form-group">
+            <label for="restrictions_matrix">Matriz de Restricciones (filas separadas por ; columnas por ,):</label>
+            <textarea id="restrictions_matrix" name="restrictions_matrix" required 
+                      placeholder="Ej: 2, 1; 1, 3"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="independent_terms">Términos Independientes (separados por comas):</label>
+            <input type="text" id="independent_terms" name="independent_terms" required 
+                   placeholder="Ej: 100, 150">
+        </div>
+        
+        <button type="submit" class="btn-solve">Resolver Problema</button>
+    </form>
+</div>
+{% endblock %}

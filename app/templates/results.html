@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="results-container">
+    <h2>Resultados del Método Simplex</h2>
+    
+    <div class="solution-summary">
+        <h3>Resumen de la Solución</h3>
+        <p><strong>Número de Iteraciones:</strong> {{ solution.iterations }}</p>
+        <p><strong>Valor Objetivo (Z):</strong> {{ solution.objective_value|round(2) }}</p>
+        
+        <h4>Variables de Decisión:</h4>
+        <table>
+            <tr>
+                {% for i in range(solution.variables|length) %}
+                <th>x{{ i+1 }}</th>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for value in solution.variables %}
+                <td>{{ value|round(2) }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+
+        <h4>Variables de Holgura:</h4>
+        <table>
+            <tr>
+                {% for i in range(solution.slack_variables|length) %}
+                <th>s{{ i+1 }}</th>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for value in solution.slack_variables %}
+                <td>{{ value|round(2) }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+    
+    <div class="iterations">
+        <h3>Tablas de Iteraciones</h3>
+        {% for iteration in iterations %}
+        <div class="iteration">
+            <h4>Iteración {{ loop.index }}</h4>
+            <table>
+                {% for row in iteration %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ "%.2f"|format(cell) }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
