@@ -2,7 +2,7 @@
 
 El siguiente proyecto es el entregable del referente practivo del curso de Investigacion de Operaciones dictado por el Ingeniero Pablo Perez en el marco de dicha asignatura, fue desarollado en [Flask](https://flask.palletsprojects.com/en/stable/) como alternativa escalable y sencilla para este proyecto.
 
-Integrantes:
+**Integrantes:**
 - Luis Martinez
 - Edgar Montes
 
@@ -14,11 +14,11 @@ Integrantes:
 
 ## Componentes Principales
 
-- Config: Configuraciones generales
-- Routes: Manejo de endpoints
-- Simplex: Lógica de resolución
-- Templates: Interfaz de usuario
-- Tests: Pruebas unitarias
+- **Config:** Configuraciones generales
+- **Routes:** Manejo de endpoints
+- **Simplex:** Lógica de resolución
+- **Templates:** Interfaz de usuario
+- **Tests:** Pruebas unitarias
 
 ## Funcionalidades
 
