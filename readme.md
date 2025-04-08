@@ -2,7 +2,13 @@
 
 El siguiente proyecto es el entregable del referente practivo del curso de Investigacion de Operaciones dictado por el Ingeniero Pablo Perez en el marco de dicha asignatura, fue desarollado en [Flask](https://flask.palletsprojects.com/en/stable/) como alternativa escalable y sencilla para este proyecto.
 
-**Integrantes:**
+## Ingresar al proyecto desplegado:
+[Proyecto Investigacio](http://52.90.199.223:8080/)
+
+## Tecnologias
+<img src="https://skillicons.dev/icons?i=py,flask,docker,aws,html,css,js"/>
+
+## Integrantes:
 - Luis Martinez
 - Edgar Montes
 
